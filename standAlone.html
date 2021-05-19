@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tak Toe</title>
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      button {
+        background-color: #0c80f3;
+        border: 6px solid #0ff166;
+        border-radius: 10px;
+      }
+      .game-board {
+        width: 450px;
+        height: 550px;
+        margin: 0 auto;
+        background-color: #34495e;
+        color: white;
+        border: 6px solid #0b0d0f;
+        border-radius: 10px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+      }
+
+      .grid-row {
+        border: 6px solid #739dc7;
+        border-radius: 6px;
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 4em;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(175, 70, 70);
+      }
+      .block {
+        background-color: rgb(219, 28, 28);
+        border: 6px solid green;
+        border-radius: 6px;
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 20em;
+      }
+      .black {
+        color: black;
+      }
+
+      .white {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tic-Tac-Toe with React</h1>
+    <!-- We will put our React component inside this div. -->
+    <div id="root"></div>
+
+    <!-- Load React. -->
+    <script
+      src="https://unpkg.com/react/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- Load our React component. -->
+    <script src="gameBoard.jsx" defer type="text/babel"></script>
+  </body>
+</html>
